@@ -5,8 +5,10 @@ import { Image } from "@nextui-org/image";
 import { title, subtitle } from "@/components/primitives";
 import TrustedSection from "@/components/trusted";
 import MagicEditSection from "@/components/magicEdi";
+import MagicEditSectionLast from "@/components/magicEdit2";
 import ProTipsSection from "@/components/lastPart";
 import CollageText from "@/components/collageText";
+import FeaturesSection from "@/components/tiles";
 
 export default function Home() {
   return (
@@ -67,7 +69,7 @@ export default function Home() {
       </section>
 
       <CollageText></CollageText>
-
+      <FeaturesSection></FeaturesSection>
       <MagicEditSection></MagicEditSection>
       <section className="w-full py-16 text-center">
         <div className="max-w-6xl mx-auto px-4">
@@ -80,7 +82,6 @@ export default function Home() {
         </div>
       </section>
       <CollageText></CollageText>
-      <MagicEditSection></MagicEditSection>
 
       <ProTipsSection></ProTipsSection>
     </>

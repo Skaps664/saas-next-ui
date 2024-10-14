@@ -1,4 +1,5 @@
 "use client";
+import { Link } from "@nextui-org/react";
 
 import { Button } from "@nextui-org/react";
 import { Input } from "@nextui-org/input";
@@ -9,15 +10,10 @@ export default function ProTipsSection() {
     <>
       {/* Get Started Section */}
       <section className="flex flex-col items-center justify-center mt-16">
-        <h2 className="text-3xl font-bold mb-2 text-center">
-          Get Started with Editur Now
+        <h2 className="text-4xl font-bold mb-2 text-center">
+          Get Started with Editur
         </h2>
-        <p className="text-lg text-center mb-8">
-          Find all Minvo's Pro-Tips on{" "}
-          <a href="#" className="text-violet-500 underline">
-            YouTube
-          </a>
-        </p>
+        <p className="text-lg text-center mb-8">Here is what Editur can do</p>
 
         {/* Video Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-10">
@@ -69,16 +65,14 @@ export default function ProTipsSection() {
 
         {/* Try Your First Video Free Section */}
         <section className="flex flex-col items-center justify-center mt-16 w-full py-20">
-          <h3 className="text-2xl mb-4">Try Your First Video Free</h3>
-
+          <h3 className="text-2xl mb-4">Try Out Editur.ai Now</h3>
           {/* Input and Button Row */}
           <div className="flex items-center w-full max-w-md">
-            <Input
-              type="text"
-              placeholder="Paste YouTube link"
+            <input
+              type="email"
+              placeholder="Email Address"
               className="flex-grow px-4 py-2 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-violet-500 mr-4"
             />
-
             {/* Create Shorts Button */}
             <Button
               color="primary"
