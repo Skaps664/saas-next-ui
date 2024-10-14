@@ -8,7 +8,7 @@ export default function MagicEditSection() {
   return (
     <section className="flex flex-col md:flex-row gap-8 p-8 mt-12 ">
       {/* Left Side Text Box */}
-      <Card className="w-full md:w-1/2 bg-gray-900 text-white p-8 rounded-lg shadow-lg  mt-12 p-24 h-380">
+      <Card className="w-full md:w-1/2 bg-purple-900 p-8 rounded-lg shadow-lg  mt-12 p-24 h-380">
         <h2 className="text-4xl font-bold mb-6">MagicEdit powered by GPT-4o</h2>
         <p className="text-lg mb-6">
           Create content for all platforms in one place

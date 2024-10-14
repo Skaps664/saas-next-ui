@@ -6,6 +6,7 @@ import { title, subtitle } from "@/components/primitives";
 import TrustedSection from "@/components/trusted";
 import MagicEditSection from "@/components/magicEdi";
 import ProTipsSection from "@/components/lastPart";
+import CollageText from "@/components/collageText";
 
 export default function Home() {
   return (
@@ -65,65 +66,22 @@ export default function Home() {
         <TrustedSection></TrustedSection>
       </section>
 
-      {/* Pro-edited moments Section */}
-      <section className="flex flex-col md:flex-row gap-20 p-8 mt-15">
-        <div className="flex flex-col md:flex-row gap-8 w-full">
-          <div className="w-full md:w-1/2 grid grid-rows-2 gap-4">
-            {/* Two square images stacked on top of each other */}
-            <Image
-              src="https://nextui.org/images/hero-card-complete.jpeg"
-              alt="Example 1"
-              width={300}
-              height={200}
-              className="object-cover rounded-md"
-            />
-            <Image
-              src="https://nextui.org/images/hero-card-complete.jpeg"
-              alt="Example 2"
-              width={300}
-              height={200}
-              className="object-cover rounded-md"
-            />
-          </div>
-
-          <div className="w-full md:w-1/2">
-            {/* One taller image next to the square ones */}
-            <Image
-              src="https://nextui.org/images/hero-card-complete.jpeg"
-              alt="Example 4"
-              width={300}
-              height={420}
-              className="object-cover rounded-md h-full"
-            />
-          </div>
-        </div>
-
-        {/* Text Section */}
-        <div className="w-full flex items-center bg-gray-900 rounded-md p-24 h-420">
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Pro-edited moments in just 3 clicks
-            </h2>
-            <p className="text-gray-400 text-lg">
-              Create content for YouTube, Instagram, TikTok, LinkedIn, and more
-              - all in one place.
-            </p>
-          </div>
-        </div>
-      </section>
+      <CollageText></CollageText>
 
       <MagicEditSection></MagicEditSection>
       <section className="w-full py-16 text-center">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl underline decoration-violet-500 underline-offset-4">
+          <h2 className="text-3xl font-bold underline decoration-violet-500 underline-offset-4">
             Powerful <b>AI Magic</b> with
           </h2>
-          <h3 className="text-3xl md:text-4xl mt-4 ">
+          <h3 className="text-3xl font-bold mt-4 ">
             Precision Transcript & Timeline Editing
           </h3>
         </div>
       </section>
+      <CollageText></CollageText>
       <MagicEditSection></MagicEditSection>
+
       <ProTipsSection></ProTipsSection>
     </>
   );
