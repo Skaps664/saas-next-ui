@@ -1,6 +1,6 @@
 # Next.js & NextUI Template
 
-![1728984028695](image/README/1728984028695.png)
+![1728986484010](image/README/1728986484010.png)
 
 This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
 
