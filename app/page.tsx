@@ -13,7 +13,7 @@ import FeaturesSection from "@/components/tiles";
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col md:flex-row items-start justify-between gap-4 py-8 px-10 md:py-10 mt-16 w-full">
+      <section className="flex flex-col md:flex-row items-start justify-between gap-4 py-8 px-10 md:py-10 mt-13 w-full">
         {/* Main Title Section */}
         <div className="inline-block max-w-xl">
           <h1 className={`${title()} text-5xl font-bold text-left`}>
@@ -55,12 +55,10 @@ export default function Home() {
 
         {/* Image aligned to the right */}
         <div className="flex justify-end w-full md:w-1/2">
-          <Image
-            width={600}
-            alt="NextUI hero Image"
-            src="https://nextui.org/images/hero-card-complete.jpeg"
-            className="object-cover rounded-md"
-          />
+          <video autoPlay loop muted className="rounded-lg shadow-lg w-600">
+            <source src="minvo_hero.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 

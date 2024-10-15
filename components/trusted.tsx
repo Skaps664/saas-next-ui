@@ -29,7 +29,7 @@ export default function TrustedSection() {
               ))}
               <span className="text-orange-500 text-xl">½</span>
             </div>
-            <p className="text-purple-400">125 reviews</p>
+            <p className="text-purple-400">125 Ratings</p>
           </div>
         </div>
 

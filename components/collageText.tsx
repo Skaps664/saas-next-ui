@@ -1,58 +1,39 @@
 "use client";
 
-import { Button } from "@nextui-org/react";
-import { Image } from "@nextui-org/image";
-import { title, subtitle } from "@/components/primitives";
+import { FaCheck } from "react-icons/fa"; // Importing checkmark icon
+import { Card } from "@nextui-org/react"; // Using NextUI Card for a clean look
+import { Image } from "@nextui-org/react"; // Importing NextUI Image component
+import { FaYoutube, FaInstagram, FaTiktok } from "react-icons/fa"; // Importing respective social media icons
 
-export default function CollageText() {
+export default function MagicEditSection() {
   return (
-    <div>
-      {/* Pro-edited moments Section */}
-      <section className="flex flex-col md:flex-row gap-20 p-8 mt-15">
-        <div className="flex flex-col md:flex-row gap-8 w-full">
-          <div className="w-full md:w-1/2 grid grid-rows-2 gap-4">
-            {/* Two square images stacked on top of each other */}
-            <Image
-              src="https://nextui.org/images/hero-card-complete.jpeg"
-              alt="Example 1"
-              width={300}
-              height={200}
-              className="object-cover rounded-md"
-            />
-            <Image
-              src="https://nextui.org/images/hero-card-complete.jpeg"
-              alt="Example 2"
-              width={300}
-              height={200}
-              className="object-cover rounded-md"
-            />
-          </div>
+    <section className="flex flex-col md:flex-row gap-8 p-8 mt-10">
+      {/* Left Side Floating Elements */}
+      <div className="w-full md:w-1/2 flex items-center justify-center mt-8">
+        <Image
+          src="image2.png" // Uploaded image file
+          alt="MagicEdit"
+          className="rounded-lg shadow-lg"
+          objectFit="cover"
+        />
+      </div>
 
-          <div className="w-full md:w-1/2">
-            {/* One taller image next to the square ones */}
-            <Image
-              src="https://nextui.org/images/hero-card-complete.jpeg"
-              alt="Example 4"
-              width={300}
-              height={420}
-              className="object-cover rounded-md h-full"
-            />
-          </div>
-        </div>
-
-        {/* Text Section */}
-        <div className="w-full flex items-center bg-gray-900 rounded-md p-24 h-420">
-          <div>
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Pro-edited moments in just 3 clicks
-            </h2>
-            <p className="text-gray-400 text-lg">
-              Create content for YouTube, Instagram, TikTok, LinkedIn, and more
-              - all in one place.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
+      {/* Right Side Text Box */}
+      <Card className="w-full md:w-1/2 bg-gray-900 border border-purple-500 p-8 rounded-lg shadow-lg  mt-12 p-24 h-380">
+        <h2 className="text-4xl font-bold mb-3">Pro-edited moments</h2>
+        <p className="text-lg mb-6">in just 3 clicks, Create content for</p>
+        <ul className="space-y-4 text-lg">
+          <li className="flex items-center">
+            <FaYoutube className="text-red-500 mr-3" /> YouTube
+          </li>
+          <li className="flex items-center">
+            <FaInstagram className="text-pink-500 mr-3" /> Instagram
+          </li>
+          <li className="flex items-center">
+            <FaTiktok className="text-black mr-3" /> TikTok and more
+          </li>
+        </ul>
+      </Card>
+    </section>
   );
 }

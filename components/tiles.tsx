@@ -19,7 +19,7 @@ export default function FeaturesSection() {
       <div className="flex flex-wrap justify-center gap-9 mt-7">
         {/* First Card */}
         <Card className="w-80 h-40 bg-gray-900 border border-blue-500">
-          <CardBody className="flex items-center justify-center text-center text-white">
+          <CardBody className="flex items-center justify-center text-center ">
             <div className="flex flex-col items-center justify-center">
               <SparklesIcon className="w-10 h-10 mb-4" />
               <p className="text-lg">Auto-clip the best moments</p>

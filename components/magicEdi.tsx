@@ -8,7 +8,7 @@ export default function MagicEditSection() {
   return (
     <section className="flex flex-col md:flex-row gap-8 p-8 mt-12 ">
       {/* Left Side Text Box */}
-      <Card className="w-full md:w-1/2 bg-gray-800 p-8 rounded-lg shadow-lg  mt-12 p-24 h-380">
+      <Card className="w-full md:w-1/2 bg-gray-800 border border-purple-500 p-8 rounded-lg shadow-lg  mt-12 p-24 h-380">
         <h2 className="text-4xl font-bold mb-6">MagicEdit powered by GPT-4o</h2>
         <p className="text-lg mb-6">
           Create content for all platforms in one place
@@ -29,9 +29,9 @@ export default function MagicEditSection() {
       {/* Right Side Floating Elements */}
       <div className="w-full md:w-1/2 flex items-center justify-center">
         <Image
-          src="https://nextui.org/images/hero-card-complete.jpeg" // Example NextUI image
+          src="image.png" // Example NextUI image
           alt="MagicEdit"
-          height={420} // Matching the height with the left text box for uniformity
+          // height={420} // Matching the height with the left text box for uniformity
           className="rounded-lg shadow-lg"
           objectFit="cover"
         />
