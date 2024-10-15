@@ -25,7 +25,35 @@ export default function Home() {
           <p className={`${subtitle()} text-lg text-gray-600 mt-6 text-left`}>
             within just a few clicks.
           </p>
-
+          <div className="text-lg leading-relaxed pt-6">
+            <p>
+              AI-powered video editing & social media intelligence for
+              <span className="underline decoration-blue-500 decoration-4 mx-1">
+                podcasts
+              </span>
+              ,
+              <span className="underline decoration-green-500 decoration-4 mx-1">
+                live streams
+              </span>
+              ,
+              <span className="underline decoration-red-500 decoration-4 mx-1">
+                TV & radio
+              </span>
+              ,
+              <span className="underline decoration-yellow-500 decoration-4 mx-1">
+                sermons
+              </span>
+              ,
+              <span className="underline decoration-pink-500 decoration-4 mx-1">
+                entrepreneurs
+              </span>
+              , &
+              <span className="underline decoration-orange-500 decoration-4 mx-1">
+                agencies
+              </span>
+              .
+            </p>
+          </div>
           {/* Try Your First Video Section */}
           <section className="flex flex-col items-start justify-start mt-8">
             <h1 className="text-xl md:text-xl mb-4">
