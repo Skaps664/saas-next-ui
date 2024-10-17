@@ -16,7 +16,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-start justify-between gap-4 py-8 px-10 md:py-10 mt-13 w-full">
         {/* Main Title Section */}
         <div className="inline-block max-w-xl">
-          <h1 className={`${title()} text-5xl font-bold text-left`}>
+          <h1 className={`${title()} text-4xl font-bold text-left`}>
             Convert&nbsp;
             <br />
             <span className="text-violet-500">Long Videos&nbsp;</span>
@@ -55,7 +55,7 @@ export default function Home() {
             </p>
           </div>
           {/* Try Your First Video Section */}
-          <section className="flex flex-col items-start justify-start mt-8">
+          <section className="flex flex-col items-start justify-start mt-16">
             <h1 className="text-xl md:text-xl mb-4">
               Try Your First Video for Free
             </h1>
@@ -73,7 +73,6 @@ export default function Home() {
               <Button
                 color="primary"
                 className="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-md text-lg"
-                auto
               >
                 Create Shorts
               </Button>
