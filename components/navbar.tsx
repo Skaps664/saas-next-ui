@@ -102,7 +102,8 @@ export const Navbar = () => {
         <NavbarContent justify="end" className="gap-4">
           {!isDashboardPage && (
             <NavbarItem className="hidden lg:flex">
-              <Link href="#" className="text-purple-500">
+              {/* Updated Login Link to point to /login */}
+              <Link href="/login" className="text-purple-500">
                 Login
               </Link>
             </NavbarItem>
