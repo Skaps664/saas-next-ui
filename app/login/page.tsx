@@ -1,4 +1,4 @@
-"use client"; // Add this at the top of your file
+"use client";
 
 import { useState } from "react";
 import { LoginForm } from "@/components/LoginForm";
@@ -12,12 +12,15 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
-      {showLogin ? (
-        <LoginForm toggleForm={toggleForm} />
-      ) : (
-        <RegisterForm toggleForm={toggleForm} />
-      )}
+    <div className="flex items-center justify-center pt-20">
+      {/* Restrict size to the card only, no extra space */}
+      <div className="flex flex-col items-center justify-center">
+        {showLogin ? (
+          <LoginForm toggleForm={toggleForm} />
+        ) : (
+          <RegisterForm toggleForm={toggleForm} />
+        )}
+      </div>
     </div>
   );
 };

@@ -1,31 +1,38 @@
-"use-client";
+"use client";
+
+import { Card, CardBody } from "@nextui-org/react";
 
 export const LoginForm = ({ toggleForm }: { toggleForm: () => void }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-6 bg-gray-900 text-white w-full max-w-md mx-auto">
-      <h3 className="text-2xl font-bold mb-4">Login to Your Account</h3>
-      <input
-        type="email"
-        placeholder="Email"
-        className="w-full p-2 mb-4 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-purple-500"
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        className="w-full p-2 mb-4 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-purple-500"
-      />
-      <button className="w-full py-2 px-4 bg-gradient-to-r from-gradientStart to-gradientEnd text-white rounded hover:bg-gradientEnd focus:outline-none">
-        Login
-      </button>
-      <p className="mt-4">
-        Don’t have an account?{" "}
-        <span
-          onClick={toggleForm}
-          className="text-purple-500 cursor-pointer hover:underline"
-        >
-          Register here
-        </span>
-      </p>
-    </div>
+    <Card className="w-full max-w-md bg-gray-900 border border-purple-500 py-12 px-6">
+      <CardBody className="p-6">
+        <div className="flex flex-col items-center justify-center text-white">
+          <h3 className="text-2xl font-bold mb-4">Login to Your Account</h3>
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-2 mb-4 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-purple-500"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-2 mb-4 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-purple-500"
+          />
+          {/* Updated button with a blue border and no background */}
+          <button className="w-full py-3 px-4 border border-yellow-500 text-yellow-500 rounded hover:bg-gray-800 hover:text-white focus:outline-none">
+            Login
+          </button>
+          <p className="mt-8">
+            Don’t have an account?{" "}
+            <span
+              onClick={toggleForm}
+              className="text-purple-500 cursor-pointer hover:underline"
+            >
+              Register here
+            </span>
+          </p>
+        </div>
+      </CardBody>
+    </Card>
   );
 };
